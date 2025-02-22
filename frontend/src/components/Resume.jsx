@@ -123,7 +123,7 @@ const Resume = () => {
           {jobs.map((job) => (
             <div
               key={job.id}
-              className={job-card ${selectedJob?.id === job.id ? "selected" : ""}}
+              className={`job-card ${selectedJob?.id === job.id ? "selected" : ""}`}
               onClick={() => handleCardClick(job)}
             >
               <h3>{job.role}</h3>
@@ -191,4 +191,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Resume;

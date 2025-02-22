@@ -36,4 +36,5 @@
 .video {
   width: 100%;
   border: 1px solid #ccc;
-  border-rad
+  border-radius: 4px;
+}

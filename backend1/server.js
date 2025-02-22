@@ -257,7 +257,7 @@ app.post('/stats', async (req, res) => {
       // Send the email
       let info = await transporter.sendMail({
         from: '"Interview ME" <mrperfectth7@gmail.com>', 
-        to: "jadhavaditya080@gmail.com", 
+        to: "prabhatpotdar789@gmail.com", 
         subject: "Feedback of the Interview from AI", 
         text: result, 
       });

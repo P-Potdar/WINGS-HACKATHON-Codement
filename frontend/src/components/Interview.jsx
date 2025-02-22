@@ -94,11 +94,19 @@ const Interview = () => {
     if (recognitionRef.current) {
       recognitionRef.current.stop(); // Stop speech recognition
     }
+
+    if (mediaRecorderRef.current) {
+      const stream = mediaRecorderRef.current.stream;
+      stream.getTracks().forEach(track => track.stop());
+    }
   
     if (socketRef.current && isConnected) {
       // Send the transcribed text to WebSocket as before
-      socketRef.current.send(transcribedText); 
+      socketRef.current.send("goodbye"); 
       console.log(transcribedText);
+
+      socketRef.current.close();
+      setIsConnected(false)
       
       
       // Prepare data for API call

@@ -201,29 +201,58 @@ class ConversationManager:
         self.transcription_response = ""
         self.llm = LanguageModelProcessor()
 
+    
     async def handle_message(self, websocket, path):
+        async def mic_task():
+            await get_transcript(handle_full_sentence)
+    
+        async def ws_task():
+            msg = await websocket.recv()
+            return msg
+    
         def handle_full_sentence(full_sentence):
             self.transcription_response = full_sentence
-
-        # Loop indefinitely until "goodbye" is detected
+    
         while True:
-            await get_transcript(handle_full_sentence)
-            
-            # Check for "goodbye" to exit the loop
+            # Run both tasks in parallel
+            tasks = [
+                asyncio.create_task(mic_task()),
+                asyncio.create_task(ws_task())
+            ]
+            done, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
+    
+            # Whichever finishes first, handle it
+            for task in done:
+                if task in tasks:
+                    try:
+                        result = task.result()
+                        # If it's the ws_task, check for "goodbye"
+                        if isinstance(result, str) and "goodbye" in result.lower():
+                            await websocket.send("Goodbye!")
+                            await websocket.close()
+                            # Cancel the mic task so it stops streaming
+                            for p in pending:
+                                p.cancel()
+                            return
+                    except:
+                        pass
+                    
+            # Cancel the remaining task and continue unless you break out
+            for p in pending:
+                p.cancel()
+    
+            # Check if the transcript was set to "goodbye"
             if "goodbye" in self.transcription_response.lower():
                 await websocket.send("Goodbye!")
+                await websocket.close()
                 break
-            
-            llm_response = self.llm.process(self.transcription_response)
+            else:
+                llm_response = self.llm.process(self.transcription_response)
+                TextToSpeech().speak(llm_response)
+                await websocket.send(llm_response)
+                self.transcription_response = ""
 
-            tts = TextToSpeech()
-            tts.speak(llm_response)
 
-            # Send LLM response to the client via WebSocket
-            await websocket.send(llm_response)
-
-            # Reset transcription_response for the next loop iteration
-            self.transcription_response = ""
 
     async def main(self):
         # Start WebSocket server

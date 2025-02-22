@@ -1,60 +1,58 @@
 
 
-Aditya Anil Jadhav
-Pune, India • +91-7823076475 • adityajadhav14143@gmail.com • linkedin.com/in/aditya-jadhav-926b95259/
-• 
-github.com/aditya78230 
-• 
-leetcode.com/Aditya_jadhav27 
-• 
-Hackerrank/adityajadhav1411 
-• 
-Portfolio
+Prianshu Khalde
+Pune, Maharashtra India
+github | linkedin | prianshukhalde04@gmail.com | +91-9820487683 | LeetCode
+SKILLS AND INTERESTS
+C, Java, Python, HTML, CSS, JavaScript, Machine Learning (basics), Operating System, Computer networks, Data
+Structures, DBMS Concepts, SQL, Microsoft 360 Tools, Teamwork, Leadership, Problem Solving.
 EDUCATION
-B.Tech., Computer Science Engineering 2021 - 2025
-PCET’s Nutan College Of Engineering And Research CGPA: 7.60
-XII (H.S.C) 2021
-Sau Anusaya Vadhokar Higher Secondary School percentage: 77.2
-TECHNICAL SKILLS
-Programming: Java, C, Javascript, HTML.
-Frameworks/Libraries: ReactJs, ExpressJs, Bootstrap, Zod.
-Database: MongoDB, mySQL.
-Development Practices: Agile methodology, Extreme Programming, Prototype methodology.
-Tools: Linux, Postman, RestAPI, Node.js, Github, Git, VsCode.
-SoftSkills: Problem Solving, Analytical Skills, Teamwork.
-PROFESSIONAL EXPERIENCE
-Celebal Technologies : Summer Intern 
-May 2024 - July 2024
-• Engineered new e-commerce features with ReactJS, boosting user engagement by 20% and decreasing page load
-times by 30%, enhancing overall site performance.
-• Spearheaded a team of five to create a Spotify clone and e-commerce platform using ReactJS, delivering projects
-two weeks ahead of schedule and attaining a 95% code quality score in peer reviews.
-TechnoHacks EduTech : Java Programming February 2024 - March 2024
-• Produced high-quality code for three major projects, consistently meeting deadlines and earning commendation for
-precision and efficiency.
-ACADEMIC PROJECTS
-EduSphere: AI-Powered Virtual Classroom Assistant Source-code
-• Engineered EduSphere using the MERN stack under Agile methodology, enabling real-time student-teacher
-interaction and doubt resolution. Achieved an 85% satisfaction rate and successfully scaled the platform to support
-over 100 active users.
-• Integrated advanced hand detection models, enhancing live session interactivity by automatically pausing and
-resuming based on student queries.
-EchoStream: News on the Go Source-code
-• C
-rafted a cross-platform news application with Flutter and Dart, enhancing accessibility via text-to-speech
-and live streaming, 
-leading to a 50% boost in user engagement.
-Guardian AI: Real-Time Face Detection for Enhanced Security Source-code
-• Engineered an IoT-integrated facial recognition system with Python and OpenCV, achieving 89% accuracy in
-real-time detection for security applications..
-• Utilized the LBPH algorithm for facial recognition, with Python and OpenCV for image processing and real-time data
-analysis.
-ACHIEVEMENTS
-• Secured a finalist position out of over 100 teams in the Machine Learning Hackathon at IIT Kharagpur by
-engineering a predictive model with 82% accuracy.
-• Achieved 1st Runner-up in an institute-level coding competition, surpassing 200 participants by solving complex
-algorithmic challenges 20% faster than average.
-• Earned certification as a Software Engineer Intern from HackerRank, placing in the top 5% for problem-solving skills
-and technical proficiency.
-• Ranked as a top performer in the TechGIG Coding competition, placing in the top 1% out of 50,000 participants by
-solving advanced coding problems with a 98% accuracy rate.
+PCET’s Nutan College of Engineering and Research, Pune Aug 2021 - June 2025
+Bachelors of Technology in Computer Science and Engineering CGPA: 7.4/10
+Shramik Junior College, Sangamner June 2021
+Higher Secondary Education (Class XII) Percentage: 81.83
+Dr. B.G. Dere English Medium School, Sangamner June 2019
+Secondary Education (Class X) Percentage: 76.20
+PROJECTS
+Multimedia Steganography
+• Developed a steganography system for hiding data within multimedia files, such as images, videos, audio and text
+files.
+• Utilized advanced cryptographic techniques and steganographic algorithms to ensure data integrity and confidentiality.
+• The project highlighted expertise in data security, algorithm design, and multimedia processing.
+Spotify Clone
+• Designed and developed a responsive clone of the Spotify web page using modern web technologies such as HTML, CSS,
+and JavaScript.
+• Implemented an interactive user interface replicating Spotify's design and functionality, showcasing proficiency in front-
+end development and attention to detail in recreating dynamic web components.
+IoT Home Automation
+• Designed and developed a responsive clone of the Spotify web page using modern web technologies such as HTML, CSS,
+and JavaScript.
+• Implemented an interactive user interface replicating Spotify's design and functionality, showcasing proficiency in front-
+end development and attention to detail in recreating dynamic web components.
+INTERNSHIPS
+Salesforce Developer | Salesforce July 2024 - Sept 2024
+• Developed custom applications on the Salesforce platform using Apex code and Visualforce.
+• Contributed to enhancing functionality and user experience through the creation of tailored solutions.
+• Gained valuable hands-on experience in building applications to meet specific business requirements within the Salesforce
+ecosystem.
+IoT Internship | Emertxe June 2024 - July 2024
+• Developed Home Automation Project with a team of two members.
+• Developed an IoT system for smart home automation using Arduino UNO, Blynk IoT Cloud, and the Blynk app. Features
+include controlling light brightness, monitoring temperature, and tracking water tank levels.
+• Implemented sensors and modules such as LDR, temperature sensors, and serial tank systems, showcasing expertise in
+IoT integration and cloud-based device control.
+CERTIFICATIONS
+• Salesforce Salesforce Fundamentals, Apex, Testing Debugging.
+• Cisco Networking Basics.
+• Infosys Springboard IoT Certification.
+• Infosys Springboard AWS Machine Learning Certificate.
+• Innov8 2.0 Hackathon Participation Certificate.
+• Alphabyte Hackathon Participation Certificate.
+• Flipkart GRID 6.0 Participation Certificate.
+• AICPTR C and JAVA Certifications.
+ExTRA CURRICULAR ACTIVITIES
+• Actively participation in Model making competition in college and secured 3rd place.
+• Active participation in multiple offline and online hackathons.
+LANGUAGE AND HOBBIES
+• English, Marathi, Hindi.
+• Sports, Travelling, Reading Books, Writing, Riding.

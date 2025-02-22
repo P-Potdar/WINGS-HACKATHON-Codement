@@ -1,3 +1,6 @@
+require('dotenv').config();
+const HFK = process.env.HFK;
+
 const express = require('express');
 const multer = require('multer');
 const pdf = require('pdf-parse-new');
@@ -148,7 +151,7 @@ app.get('/jobs',async (req,res)=>{
 
 app.post('/compatibility', async (req, res) => {
   const hf = require('@huggingface/inference');
-  const client = new hf.HfInference('');
+  const client = new hf.HfInference(HFK);
 
   try {
     // Use lean() for faster MongoDB queries
@@ -200,7 +203,7 @@ in last tell me in isCompatible: true/false(only)
 
 app.post('/stats', async (req, res) => {
   const hf = require('@huggingface/inference');
-  const client = new hf.HfInference('');
+  const client = new hf.HfInference(HFK);
 
   const ans = req.body.ans;
   const que = req.body.que;
